@@ -7,7 +7,7 @@
 {% block body %}
 	<h1>
 		Your cart</h1>
-			{% for message in app.flashes('error') %}
+	{% for message in app.flashes('error') %}
 		<p>{{message}}</p>
 	{% endfor %}
 	<div class='container-table'>
@@ -25,7 +25,7 @@
 			<tbody>
 				{% for sneaker in dataCart %}
 					<tr>
-						<th><img src='{{ sneaker.product.photoUrl }}' width='150' alt='{{sneaker.product.slug}}'></th>
+						<th><img src={% if 'cdn.shopify' in sneaker.product.photourl %} {{sneaker.product.photourl}} {% else %} '../assets/img/{{sneaker.product.photourl}}' {% endif %} width='150' alt='{{sneaker.product.slug}}'></th>
 						<th>{{ sneaker.size }}</th>
 						<th>{{sneaker.quantity}}</th>
 						<th>{{sneaker.product.prix}}

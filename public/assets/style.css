@@ -65,7 +65,8 @@ a {
     text-align: center;
 }
 
-.container2 h1,h3 {
+.container2 h1,
+h3 {
     margin: 0.5em;
 }
 
@@ -98,7 +99,7 @@ nav p {
 }
 
 .contain-img {
-    height: 70vh;
+    height: 100vh;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -185,7 +186,7 @@ h3,
 }
 
 .brand button {
-    margin: 2em;    
+    margin: 2em;
     padding: 1em;
 }
 
@@ -219,7 +220,8 @@ form {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
 }
 
-input,label {
+input,
+label {
     margin: 0.2em;
 }
 
@@ -375,9 +377,10 @@ tfoot td {
 }
 
 .productimg {
-    width: 40%;
+    width: 36em;
     margin-right: 2em;
-    height: 80%;
+    height: 60%;
+    /* aspect-ratio: 3/1; */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -394,7 +397,7 @@ tfoot td {
     width: 10%;
     position: absolute;
     top: 1%;
-    right:1%;
+    right: 1%;
 }
 
 .wish img {
@@ -404,7 +407,7 @@ tfoot td {
 /* FOOTER */
 
 footer {
-    margin-top: 4rem;
+    margin-top: 10rem;
     text-align: center;
     width: 100%;
     position: relative;
@@ -440,14 +443,16 @@ footer {
     font-weight: 400;
 }
 
-.social img:hover{
+.social img:hover {
     transform: scale(1.1);
     opacity: 0.7;
 }
 
 /* CONTACT */
 
-#contact input,label,button {
+#contact input,
+label,
+button {
     margin: 1em;
     padding: 0.6em;
 }
@@ -455,7 +460,9 @@ footer {
 
 /* FILTRE PRODUIT */
 
-.filter input,label,button {
+.filter input,
+label,
+button {
     margin: 0.1em;
     padding: 0.2em;
 }
